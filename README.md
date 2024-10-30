@@ -8,7 +8,7 @@ Installation
 
 	1.	Clone this repository:
 
-[git clone https://github.com/your-username/titanic-hyperparameter-tuning.git](https://github.com/mohammad10787/Kaggle-ML-Titanic.git)
+[git clone https://github.com/mohammad10787/Kaggle-Machine-Learning-Titanic.git](https://github.com/mohammad10787/Kaggle-ML-Titanic.git)
 
 
 	2.	Install required dependencies. This code requires Python 3.7+ and the following packages:
