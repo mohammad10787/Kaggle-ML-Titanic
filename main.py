@@ -1,17 +1,9 @@
 # Importing necessary libraries for data manipulation, visualization, and machine learning
-import numpy as np  # For linear algebra operations
+
 import matplotlib.pyplot as plt  # For data visualization
 import pandas as pd  # For data processing and handling CSV files
 from sklearn.compose import ColumnTransformer  # For column-wise transformations
 from sklearn.preprocessing import OneHotEncoder, StandardScaler  # For encoding and scaling features
-from sklearn.model_selection import RandomizedSearchCV  # For hyperparameter tuning
-from sklearn.ensemble import RandomForestClassifier  # Random forest classifier model
-from sklearn.model_selection import KFold, cross_val_score  # For cross-validation
-from sklearn.pipeline import Pipeline  # For creating machine learning pipelines
-from sklearn.linear_model import LogisticRegression  # Logistic regression model
-import xgboost as xgb  # XGBoost classifier
-import warnings  # For managing warnings
-from sklearn.exceptions import ConvergenceWarning  # Handling convergence warnings
 
 # Loading training and testing datasets from CSV files
 data_train = pd.read_csv("data/train.csv")  # Load training data
