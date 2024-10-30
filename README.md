@@ -4,20 +4,11 @@ This repository contains a Python script to perform hyperparameter tuning and cr
 
 Table of Contents
 
-	•	Installation
-	•	Usage
-	•	Code Structure
-	•	Pipeline Explanation
-	•	Data
-	•	Contributing
-	•	License
-
 Installation
 
 	1.	Clone this repository:
 
-git clone https://github.com/your-username/titanic-hyperparameter-tuning.git
-cd titanic-hyperparameter-tuning
+[git clone https://github.com/your-username/titanic-hyperparameter-tuning.git](https://github.com/mohammad10787/Kaggle-ML-Titanic.git)
 
 
 	2.	Install required dependencies. This code requires Python 3.7+ and the following packages:
@@ -35,10 +26,10 @@ Usage
 
 	1.	Download the data:
 	•	Go to the Titanic: Machine Learning from Disaster page on Kaggle and download the train.csv and test.csv files.
-	•	Place the downloaded files in the project directory or specify their paths in the code if different.
+	•	Place the downloaded files in the data file in the project directory.
 	2.	Run the script:
 
-python hyperparameter_tuning.py
+main.py
 
 
 	3.	Results:
@@ -48,21 +39,21 @@ python hyperparameter_tuning.py
 
 Code Structure
 
-	•	hyperparameter_tuning.py: The main script performing hyperparameter tuning, cross-validation, and model evaluation.
+	•	main.py: The main script performing hyperparameter tuning, cross-validation, and model evaluation.
 	•	requirements.txt: A list of Python libraries and versions needed to run the code.
 
 Pipeline Explanation
 
 	1.	Pipeline Setup:
-	•	The code uses Pipeline from scikit-learn to streamline preprocessing and model selection.
-	•	Three models are evaluated: LogisticRegression, RandomForestClassifier, and XGBClassifier (from xgboost).
+		- The code uses Pipeline from scikit-learn to streamline preprocessing and model selection.
+		- Three models are evaluated: LogisticRegression, RandomForestClassifier, and XGBClassifier (from xgboost).
 	2.	Parameter Grid:
-	•	A dictionary of hyperparameters is defined for each model, enabling model-specific tuning within a single grid search.
+		- A dictionary of hyperparameters is defined for each model, enabling model-specific tuning within a single grid search.
 	3.	Hyperparameter Tuning:
-	•	RandomizedSearchCV is used to optimize model hyperparameters efficiently with cross-validation (KFold).
+		- RandomizedSearchCV is used to optimize model hyperparameters efficiently with cross-validation (KFold).
 	4.	Model Selection and Evaluation:
-	•	The model with the best hyperparameters is selected and evaluated using cross_val_score for accuracy measurement.
-	•	Accuracy results are printed, and predictions are saved in submission.csv for easy submission.
+		- The model with the best hyperparameters is selected and evaluated using cross_val_score for accuracy measurement.
+		- Accuracy results are printed, and predictions are saved in submission.csv for easy submission.
 
 Data
 
@@ -71,7 +62,3 @@ This project uses data from the Kaggle competition Titanic: Machine Learning fro
 Contributing
 
 Feel free to open issues or submit pull requests if you’d like to contribute. Please ensure any pull requests are thoroughly tested.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
