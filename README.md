@@ -1,4 +1,4 @@
-Titanic: Machine Learning from Disaster - Hyperparameter Tuning and Cross-Validation
+Titanic: Machine Learning from Disaster (Kaggle) - Hyperparameter Tuning and Cross-Validation
 
 This repository contains a Python script to perform hyperparameter tuning and cross-validation on multiple machine learning models for the Titanic: Machine Learning from Disaster competition on Kaggle. This project aims to find the best model and hyperparameters for predicting passenger survival, and prepares the results for submission to Kaggle.
 
